@@ -4,7 +4,7 @@
  * Plugin Name: GitHub Public Repo Updater
  * Plugin URI: https://github.com/JacobG321/wp-plugin-update-from-repo
  * Description: A simple plugin to update a public GitHub repository.
- * Version: 0.1.2
+ * Version: 0.1.3
  * Author: Jacob Gruber
  * Author URI: jgruber.dev
  */
@@ -67,6 +67,12 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 //Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('main');
 
+// get the token
+$token = esc_attr(get_option('github_public_repo_updater_token'));
+
 //Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication('your-token-here');
+
+if ($token) {
+    $myUpdateChecker->setAuthentication($token);
+}
 
