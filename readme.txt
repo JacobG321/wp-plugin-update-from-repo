@@ -34,7 +34,10 @@ No, this version only supports public repositories. For private repositories, ad
 = 0.0.1 =
 * Initial release.
 
+= 0.1.4 =
+* Private release.
+
 == Upgrade Notice ==
 
-= 0.0.1 =
-Initial release of the plugin. No upgrades available.
+= 0.1.4 =
+Private release, testing token.
