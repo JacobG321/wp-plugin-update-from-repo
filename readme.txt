@@ -3,7 +3,7 @@ Contributors: jacobgruber
 Tags: update, github, plugin
 Requires at least: 4.7
 Tested up to: 5.4
-Stable tag: 0.1.4
+Stable tag: 0.1.5
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -41,3 +41,6 @@ No, this version only supports public repositories. For private repositories, ad
 
 = 0.1.4 =
 Private release, testing token.
+
+= 0.1.5 =
+Public, demo
